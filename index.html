@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <script data-main="scripts/main" src="scripts/require.js"></script> -->
+    <title>BibleTrack</title>
+  </head>
+  <body>
+    <div class="bible-container">
+      <div class="top-navigation">
+        <button>
+          <i class="fas fa-bars"></i>
+        </button>
+        <select name="books" id="books">
+          <!-- <option value="Genesis">Genesis</option>
+          <option value="Matthew">Matthew</option>
+          <option value="Revelation">Revelation</option> -->
+        </select>
+        <select name="chapters" id="chapters">
+          <option value="1" class="options">1</option>
+          <option value="2" class="options">2</option>
+          <option value="3" class="options">3</option>
+          <option value="4" class="options">4</option>
+        </select>
+        <select name="version" id="version">
+          <option value="KJV">KJV</option>
+          <option value="NKJV">NKJV</option>
+        </select>
+        <button>
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </div>
+      <div class="chapter">
+        <p id="chapter-view">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, fugit
+          sequi nemo dolores voluptatem voluptatibus neque temporibus obcaecati
+          voluptates impedit, eos, harum consequatur dolore? Provident rem
+          voluptatem, minus ratione repudiandae modi earum fugiat vel. Nihil
+          nobis nostrum quidem animi velit voluptatem, cum, aliquam delectus,
+          odio provident sapiente laboriosam mollitia non!
+        </p>
+      </div>
+      <div class="bottom-navigation">
+        <button>
+          <i class="fas fa-arrow-left" id="previous-icon"></i>
+          <h3 class="">previous</h3>
+        </button>
+        <button>
+          <i class="fas fa-plus" id="record-icon"></i>
+          <h3>record</h3>
+        </button>
+        <button>
+          <i class="fas fa-arrow-right" id="next-icon"></i>
+          <h3>next</h3>
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script data-main="js/app.js" src="js/require.js"></script>
+  </body>
+</html>

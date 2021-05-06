@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+  /* scroll-behavior: smooth; */
+}
+
+.bible-container {
+  background: white;
+  width: 90vw;
+  height: 96vh;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.top-navigation {
+  background: green;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-navigation button,
+select {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.top-navigation .fas {
+  padding: 10px;
+}
+
+.chapter {
+  background: white;
+  color: blue;
+  font-size: 1.5rem;
+  flex: 7;
+  text-align: justify;
+  padding: 10px;
+  overflow-y: scroll;
+  transition: all 1s ease-in-out;
+}
+
+.chapter::-webkit-scrollbar {
+  display: none;
+}
+
+.chapter p {
+  /* padding: 5px; */
+}
+
+.bottom-navigation {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  align-items: center;
+}
+
+.bottom-navigation button {
+  background: none;
+  border: none;
+}
+
+.bottom-navigation i {
+  width: 20vw;
+  font-size: 3.5rem;
+  color: rgb(201, 195, 195);
+  transition: all 1.5s ease-in-out;
+}
+
+.bottom-navigation i:hover {
+  color: green;
+}
+
+.bottom-navigation h3 {
+  color: gray;
+  text-transform: uppercase;
+  transition: all 1.5s ease-in-out;
+}
+
+.bottom-navigation i.clicked,
+h3.clicked {
+  color: rgb(53, 209, 53);
+}
+
+.bottom-navigation i.clicked:hover {
+  color: green;
+}
